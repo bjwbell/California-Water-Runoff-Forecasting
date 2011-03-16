@@ -11,18 +11,29 @@ def adddata(stationId, year, month, precip):
 def appenddata(stationId, year, month, precip):
     data[stationId][(year, month)] = precip
 
-def outputdata(filename, yr):
+def outputdata(filename, start_year, end_year, start_month, end_month):
     writer = csv.writer(open(filename, 'w'))    
-    datalist = []
-    for stationId in stationIds:
-        for month in ['01', '02', '03', '04']:
-            if (yr, month) in data[stationId]:
-                datalist.append(data[stationId][(yr, month)])
-            else:
-                print "(%s, %s) missing from %s" % (yr, month, stationId)
-                datalist.append(0)
-    datalist.append(flow_data[(yr, '06')])
-    writer.writerow(datalist)
+    month_list = create_month_list(start_month, end_month)    
+    for yr in range(start_year, end_year + 1):
+        datalist = []
+        for stationId in stationIds:
+            for month in month_list:
+                if (str(yr), month) in data[stationId]:
+                    datalist.append(data[stationId][(str(yr), month)])
+                else:
+                    print "(%s, %s) missing from %s" % (str(yr), month, stationId)
+                    datalist.append(0)
+        datalist.append(flow_data[(str(yr), '06')])
+        writer.writerow(datalist)
+
+def create_month_list(start_month, end_month):
+    month_list = []
+    if start_month > end_month:
+        for month in range(start_month, 13):
+            month_list.append(str(month).zfill(2))
+    for month in range(1, end_month + 1):
+        month_list.append(str(month).zfill(2))
+    return month_list
 
 def read_data():
     row_idx = 0
@@ -77,6 +88,6 @@ def read_river_flow(file_name):
 read_data()                
 flow_data = read_river_flow(amf_file_name)
 
-outputdata('formatted_data.csv', year)
+outputdata('formatted_data.csv', 2000, 2006, 1, 3)
 print 'finished'
     
