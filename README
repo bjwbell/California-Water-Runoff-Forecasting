@@ -1,0 +1,28 @@
+File: AmericanRiverInfo_ALL.arff 
+Info: Contains 110 instance of the water years
+1901 to 2010. Contains the raw data with all the attributes.
+
+File: AmericanRiv_Train.arff
+Info: Same as AmericanRiverInfo_ALL.arff except
+it also has the water year as an attribute and it's whittled down to ~220 attributes 
+and some of the years may be removed.
+Years:1901-2010
+
+File: AmericanRiv_Forecasts3.csv/AmericanRiv_Forecasts3.arff
+Info: The first attribute is the forecast and determines the cutoff between real data and
+averaged data. 
+For instance the instance with 1-Apr-00 as the value for FCAST_DATE would have data
+up to and including March but everything after March is the averaged values. 
+
+The AmericanRiv_Forecasts3.arff is identical to AmericanRiv_Forecasts3.arff except
+it does not have the FCAST_DATE attribute.
+Years:1-Feb-00 through 1-May-10
+
+File: AmericanRiv_Test1.arff
+Info: Same as AmericanRiver_Train.arff except it only has the last 10 year
+i.e. 2001-2010
+Years:2001-2010
+
+
+
+ 
