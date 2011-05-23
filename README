@@ -1,3 +1,28 @@
+Directories:
+
+I've split the data into the following directories:
+
+1 .\data 
+   Contains all the data files with the last 10 instances removed (this is so we can train and then test)
+
+2. .\full_data
+   Contains all the data files with none of the instances removed
+
+3. .\models 
+   Contains the generated models by WEKA. As of now it's setup to only generate linear regression models
+
+4. .\spreadsheets
+   Contains the various spreadsheets that you had in the directory
+
+5. .\test_data
+    Contains the data files with only the last 10 instances
+
+6. .\results
+    Contains the results of training the models on .\data and then testing on .\test_data
+
+
+===DATA FILES== (contained in .\data and .\full_data)
+
 File: AmericanRiverInfo_ALL.arff 
 Info: Contains 110 instance of the water years
 1901 to 2010. Contains the raw data with all the attributes.
@@ -26,3 +51,27 @@ Years:2001-2010
 
 File: Forecasts.csv/Forecasts.xlsx
 Info: Contains the forecasts by engineers for the last ten years. 
+
+
+//DATA FILES
+
+
+==TRAINING==
+
+To train the models run
+.\train_models.bat
+there's also a .\train_models.sh which should do the same as .\train_models.bat but I haven't actually run it.
+
+To test the models run
+.\test_models.bat 
+ditto on .\test_models.sh
+
+To compare the results checkout the files in .\results and the forecasts in .\spreadsheets (the forecast files are named Forecasts-Feb.xlsx etc).
+//TRAINING
+
+
+==RESULTS==
+I've put the comparisons of the WEKA linear regression forecasts with the human ensemble forecasts in the 
+results\Comparisons-Feb.xlsx,..., results\Comparisons-May.xlsx.
+In all cases the human ensemble forecast outperformed the WEKA linear regression forecasts :-(
+
