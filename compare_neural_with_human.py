@@ -62,17 +62,34 @@ total_error_3rd_neural = [0, 0, 0, 0]
 idx = 0
 count_idx = [0, 0, 0, 0]
 i = 0
+forecast_date = ["Feb 1", "Mar 1", "Apr 1", "May 1"]
+year = 1999
 for i in range(0, len(neural_1st_third)):
     idx = i % 4
+    if (i % 4 == 0): year += 1
+    print("Forecast Date %d, %s" % (year, forecast_date[idx]))
+    print ("                Actual       Forecast       Error")
     if idx < 3:
-        total_error_human[idx] += abs(human_forecast[idx][int(i / 4)] - actual[int(i/4)])
-    total_error_neural[idx] += abs((neural_3rd_third[i] + neural_2nd_third[i] + neural_1st_third[i])/3.0 - actual[int(i/4)])
-    total_error_1st_neural[idx] += abs(neural_1st_third[i] - actual[int(i/4)])
-    total_error_2nd_neural[idx] += abs(neural_2nd_third[i] - actual[int(i/4)])
-    total_error_3rd_neural[idx] += abs(neural_3rd_third[i] - actual[int(i/4)])
+        error_human = abs(human_forecast[idx][int(i / 4)] - actual[int(i/4)])
+        total_error_human[idx] += error_human
+        print ("Human    %13d %13d %13d" % (actual[int(i/4)], human_forecast[idx][int(i / 4)], error_human))
+
+    ens_neural = (neural_3rd_third[i] + neural_2nd_third[i] + neural_1st_third[i])/3.0
+    error_ens_neural = abs(ens_neural - actual[int(i/4)])
+    total_error_neural[idx] += error_ens_neural
+    error_neural1 = abs(neural_1st_third[i] - actual[int(i/4)])
+    error_neural2 = abs(neural_2nd_third[i] - actual[int(i/4)])
+    error_neural3 = abs(neural_3rd_third[i] - actual[int(i/4)])
+    total_error_1st_neural[idx] += error_neural1
+    total_error_2nd_neural[idx] += error_neural2
+    total_error_3rd_neural[idx] += error_neural3
+    print ("Neural 1 %13d %13d %13d" % (actual[int(i/4)], neural_1st_third[i], error_neural1))
+    print ("Neural 2 %13d %13d %13d" % (actual[int(i/4)], neural_2nd_third[i], error_neural2))
+    print ("Neural 3 %13d %13d %13d" % (actual[int(i/4)], neural_3rd_third[i], error_neural3))
+    print ("Ens.Neur %13d %13d %13d" % (actual[int(i/4)], ens_neural, error_ens_neural))
     count_idx[idx] += 1
 
-forecast_date = ["Feb 1", "Mar 1", "Apr 1", "May 1"]
+
 for idx in range(0, 4):
     print("\n")
     print("Forecast Date %s" % (forecast_date[idx]))
