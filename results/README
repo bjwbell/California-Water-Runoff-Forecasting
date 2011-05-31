@@ -1,1 +1,4 @@
 This is where the results of ../test_models.bat/sh are stored.
+
+human_ensemble_april_forecast.txt:contains the forecast made by the humans on April-1st. Hence it's created using data up through and including March.
+actual_2001-2010.txt:contains the actual flow for 2001-2010.
