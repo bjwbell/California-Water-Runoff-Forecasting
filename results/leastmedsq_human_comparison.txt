@@ -1,0 +1,166 @@
+
+c:\Users\bjbell\California-Water-Runoff-Forecasting>java -Xss4096k -cp weka.jar weka.classifiers.functions.LeastMedSq -l models\linearmedsq.model -p last -T full_data/split_by_runoff/AmericanRiv_Forecasts3.arff  1>results\leastmedsq.out 
+
+c:\Users\bjbell\California-Water-Runoff-Forecasting>python compare_leastmedsq_with_human.py 
+Forecast Date 2000, Feb 1
+                Actual       Forecast       Error
+Human          1108933       1040000         68933
+Leastmedsq        1108933       1178845         69912
+Forecast Date 2000, Mar 1
+                Actual       Forecast       Error
+Human          1108933       1430000        321067
+Leastmedsq        1108933       1233868        124935
+Forecast Date 2000, Apr 1
+                Actual       Forecast       Error
+Human          1108933       1170000         61067
+Leastmedsq        1108933       1191308         82375
+Forecast Date 2000, May 1
+                Actual       Forecast       Error
+Leastmedsq        1108933       1130830         21897
+Forecast Date 2001, Feb 1
+                Actual       Forecast       Error
+Human           552626        740000        187374
+Leastmedsq         552626       1135846        583220
+Forecast Date 2001, Mar 1
+                Actual       Forecast       Error
+Human           552626        840000        287374
+Leastmedsq         552626       1227712        675086
+Forecast Date 2001, Apr 1
+                Actual       Forecast       Error
+Human           552626        580000         27374
+Leastmedsq         552626       1299357        746731
+Forecast Date 2001, May 1
+                Actual       Forecast       Error
+Leastmedsq         552626       1058343        505717
+Forecast Date 2002, Feb 1
+                Actual       Forecast       Error
+Human           973817       1200000        226183
+Leastmedsq         973817       1232049        258232
+Forecast Date 2002, Mar 1
+                Actual       Forecast       Error
+Human           973817       1050000         76183
+Leastmedsq         973817       1147201        173384
+Forecast Date 2002, Apr 1
+                Actual       Forecast       Error
+Human           973817       1100000        126183
+Leastmedsq         973817       1201144        227327
+Forecast Date 2002, May 1
+                Actual       Forecast       Error
+Leastmedsq         973817       1168855        195038
+Forecast Date 2003, Feb 1
+                Actual       Forecast       Error
+Human          1354434       1020000        334434
+Leastmedsq        1354434       1134272        220161
+Forecast Date 2003, Mar 1
+                Actual       Forecast       Error
+Human          1354434        810000        544434
+Leastmedsq        1354434       1142048        212385
+Forecast Date 2003, Apr 1
+                Actual       Forecast       Error
+Human          1354434        680000        674434
+Leastmedsq        1354434       1159831        194602
+Forecast Date 2003, May 1
+                Actual       Forecast       Error
+Leastmedsq        1354434       1267591         86842
+Forecast Date 2004, Feb 1
+                Actual       Forecast       Error
+Human           632159       1170000        537841
+Leastmedsq         632159       1122907        490748
+Forecast Date 2004, Mar 1
+                Actual       Forecast       Error
+Human           632159       1280000        647841
+Leastmedsq         632159       1059261        427102
+Forecast Date 2004, Apr 1
+                Actual       Forecast       Error
+Human           632159        940000        307841
+Leastmedsq         632159        984971        352812
+Forecast Date 2004, May 1
+                Actual       Forecast       Error
+Leastmedsq         632159        767760        135601
+Forecast Date 2005, Feb 1
+                Actual       Forecast       Error
+Human          2003878       1410000        593878
+Leastmedsq        2003878       1349761        654116
+Forecast Date 2005, Mar 1
+                Actual       Forecast       Error
+Human          2003878       1330000        673878
+Leastmedsq        2003878       1215451        788426
+Forecast Date 2005, Apr 1
+                Actual       Forecast       Error
+Human          2003878       1510000        493878
+Leastmedsq        2003878       1203696        800181
+Forecast Date 2005, May 1
+                Actual       Forecast       Error
+Leastmedsq        2003878       1299241        704636
+Forecast Date 2006, Feb 1
+                Actual       Forecast       Error
+Human          2622387       1300000       1322387
+Leastmedsq        2622387       1281967       1340419
+Forecast Date 2006, Mar 1
+                Actual       Forecast       Error
+Human          2622387       1150000       1472387
+Leastmedsq        2622387       1347341       1275045
+Forecast Date 2006, Apr 1
+                Actual       Forecast       Error
+Human          2622387       1630000        992387
+Leastmedsq        2622387       1471313       1151073
+Forecast Date 2006, May 1
+                Actual       Forecast       Error
+Leastmedsq        2622387       2368441        253945
+Forecast Date 2007, Feb 1
+                Actual       Forecast       Error
+Human           522651        660000        137349
+Leastmedsq         522651       1030635        507984
+Forecast Date 2007, Mar 1
+                Actual       Forecast       Error
+Human           522651        850000        327349
+Leastmedsq         522651       1216281        693630
+Forecast Date 2007, Apr 1
+                Actual       Forecast       Error
+Human           522651        590000         67349
+Leastmedsq         522651       1217956        695305
+Forecast Date 2007, May 1
+                Actual       Forecast       Error
+Leastmedsq         522651        934926        412275
+Forecast Date 2008, Feb 1
+                Actual       Forecast       Error
+Human           674287       1150000        475713
+Leastmedsq         674287       1226386        552099
+Forecast Date 2008, Mar 1
+                Actual       Forecast       Error
+Human           674287       1160000        485713
+Leastmedsq         674287       1132813        458526
+
+
+Forecast Date Feb 1
+Total Error Human   3884092.0
+Total Error Leastmedsq 4676897.055000001
+Mean Error Human    431565
+Mean Error Leastmedsq  519655
+
+
+
+
+Forecast Date Mar 1
+Total Error Human   4836226.0
+Total Error Leastmedsq 4828521.9520000005
+Mean Error Human    537358
+Mean Error Leastmedsq  536502
+
+
+
+
+Forecast Date Apr 1
+Total Error Human   2750513.0
+Total Error Leastmedsq 4250410.0430000005
+Mean Error Human    343814
+Mean Error Leastmedsq  531301
+
+
+
+
+Forecast Date May 1
+Total Error Leastmedsq 2315955.16
+Mean Error Leastmedsq  289494
+
+
