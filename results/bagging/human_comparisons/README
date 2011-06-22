@@ -1,0 +1,11 @@
+The files are the results of comparing the human ensemble with the machine learning bagging ensemble. The human ensemble data is taken from human_ensemble_feb1_forecast_2000_2008.txt, human_ensemble_mar1_forecast_2000_2008.txt, and human_ensemble_apr1_forecast_2000_2008.txt files. The machine learning forecasts are generated using the model file e.g. models\bagging_leastmedsq1.model and California-Water-Runoff-Forecasting/full_data/split_by_runoff/AmericanRiv_Forecasts3.arff as the input data. 
+==File with the Comparison Results==	==Model Used==					==Model Options==
+bagging_linearmedsq1.comparison		models\bagging_leastmedsq1.model 		Bagging -P 100 -S 1 -I 100 -W weka.classifiers.functions.LeastMedSq  -- -S 4 -G 0 
+bagging_linearmedsq2.comparison		models\bagging_leastmedsq2.model 		Bagging -P 90 -S 1 -I 100 -W weka.classifiers.functions.LeastMedSq -- -S 4 -G 0   
+bagging_linearmedsq3.comparison		models\bagging_leastmedsq3.model 		Bagging -P 90 -S 1 -I 50 -W weka.classifiers.functions.LeastMedSq -- -S 4 -G 0    
+bagging_linearmedsq4.comparison		models\bagging_leastmedsq4.model 		Bagging -P 66 -S 1 -I 20 -W weka.classifiers.functions.LeastMedSq -- -S 6 -G 0    
+bagging_linearmedsq33.comparison	models\bagging_leastmedsq33.model 		Bagging -P 33 -S 1 -I 10 -W weka.classifiers.functions.LeastMedSq -- -S 8 -G 0    
+bagging_linearmedsq66.comparison	models\bagging_leastmedsq66.model 		Bagging -P 66 -S 1 -I 10 -W weka.classifiers.functions.LeastMedSq -- -S 8 -G 0    
+bagging_linearmedsq90.comparison	models\bagging_leastmedsq90.model 		Bagging -P 90 -S 1 -I 10 -W weka.classifiers.functions.LeastMedSq -- -S 8 -G 0    
+bagging_linearmedsq100.comparison	models\bagging_leastmedsq100.model		Bagging -P 100 -S 1 -I 10 -W weka.classifiers.functions.LeastMedSq -- -S 10 -G 0  
+
