@@ -1,0 +1,162 @@
+Forecast Date 2000, Feb 1
+                Actual       Forecast       Error
+Human          1108933       1040000         68933
+Bagging.LeastMedSq        1108933       1174784         65851
+Forecast Date 2000, Mar 1
+                Actual       Forecast       Error
+Human          1108933       1430000        321067
+Bagging.LeastMedSq        1108933       1269478        160545
+Forecast Date 2000, Apr 1
+                Actual       Forecast       Error
+Human          1108933       1170000         61067
+Bagging.LeastMedSq        1108933       1220373        111440
+Forecast Date 2000, May 1
+                Actual       Forecast       Error
+Bagging.LeastMedSq        1108933       1131642         22709
+Forecast Date 2001, Feb 1
+                Actual       Forecast       Error
+Human           552626        740000        187374
+Bagging.LeastMedSq         552626       1065823        513197
+Forecast Date 2001, Mar 1
+                Actual       Forecast       Error
+Human           552626        840000        287374
+Bagging.LeastMedSq         552626       1082399        529773
+Forecast Date 2001, Apr 1
+                Actual       Forecast       Error
+Human           552626        580000         27374
+Bagging.LeastMedSq         552626       1072803        520177
+Forecast Date 2001, May 1
+                Actual       Forecast       Error
+Bagging.LeastMedSq         552626        868978        316352
+Forecast Date 2002, Feb 1
+                Actual       Forecast       Error
+Human           973817       1200000        226183
+Bagging.LeastMedSq         973817       1218544        244727
+Forecast Date 2002, Mar 1
+                Actual       Forecast       Error
+Human           973817       1050000         76183
+Bagging.LeastMedSq         973817       1164105        190288
+Forecast Date 2002, Apr 1
+                Actual       Forecast       Error
+Human           973817       1100000        126183
+Bagging.LeastMedSq         973817       1196568        222751
+Forecast Date 2002, May 1
+                Actual       Forecast       Error
+Bagging.LeastMedSq         973817       1156014        182197
+Forecast Date 2003, Feb 1
+                Actual       Forecast       Error
+Human          1354434       1020000        334434
+Bagging.LeastMedSq        1354434       1154683        199750
+Forecast Date 2003, Mar 1
+                Actual       Forecast       Error
+Human          1354434        810000        544434
+Bagging.LeastMedSq        1354434       1129075        225358
+Forecast Date 2003, Apr 1
+                Actual       Forecast       Error
+Human          1354434        680000        674434
+Bagging.LeastMedSq        1354434       1110656        243777
+Forecast Date 2003, May 1
+                Actual       Forecast       Error
+Bagging.LeastMedSq        1354434       1251099        103334
+Forecast Date 2004, Feb 1
+                Actual       Forecast       Error
+Human           632159       1170000        537841
+Bagging.LeastMedSq         632159       1157742        525583
+Forecast Date 2004, Mar 1
+                Actual       Forecast       Error
+Human           632159       1280000        647841
+Bagging.LeastMedSq         632159       1147476        515317
+Forecast Date 2004, Apr 1
+                Actual       Forecast       Error
+Human           632159        940000        307841
+Bagging.LeastMedSq         632159       1043875        411716
+Forecast Date 2004, May 1
+                Actual       Forecast       Error
+Bagging.LeastMedSq         632159        800080        167921
+Forecast Date 2005, Feb 1
+                Actual       Forecast       Error
+Human          2003878       1410000        593878
+Bagging.LeastMedSq        2003878       1218313        785564
+Forecast Date 2005, Mar 1
+                Actual       Forecast       Error
+Human          2003878       1330000        673878
+Bagging.LeastMedSq        2003878       1166739        837138
+Forecast Date 2005, Apr 1
+                Actual       Forecast       Error
+Human          2003878       1510000        493878
+Bagging.LeastMedSq        2003878       1226847        777030
+Forecast Date 2005, May 1
+                Actual       Forecast       Error
+Bagging.LeastMedSq        2003878       1326047        677830
+Forecast Date 2006, Feb 1
+                Actual       Forecast       Error
+Human          2622387       1300000       1322387
+Bagging.LeastMedSq        2622387       1306477       1315909
+Forecast Date 2006, Mar 1
+                Actual       Forecast       Error
+Human          2622387       1150000       1472387
+Bagging.LeastMedSq        2622387       1361294       1261092
+Forecast Date 2006, Apr 1
+                Actual       Forecast       Error
+Human          2622387       1630000        992387
+Bagging.LeastMedSq        2622387       1551128       1071258
+Forecast Date 2006, May 1
+                Actual       Forecast       Error
+Bagging.LeastMedSq        2622387       2370425        251961
+Forecast Date 2007, Feb 1
+                Actual       Forecast       Error
+Human           522651        660000        137349
+Bagging.LeastMedSq         522651       1068455        545804
+Forecast Date 2007, Mar 1
+                Actual       Forecast       Error
+Human           522651        850000        327349
+Bagging.LeastMedSq         522651       1136655        614004
+Forecast Date 2007, Apr 1
+                Actual       Forecast       Error
+Human           522651        590000         67349
+Bagging.LeastMedSq         522651       1090508        567857
+Forecast Date 2007, May 1
+                Actual       Forecast       Error
+Bagging.LeastMedSq         522651        775130        252479
+Forecast Date 2008, Feb 1
+                Actual       Forecast       Error
+Human           674287       1150000        475713
+Bagging.LeastMedSq         674287       1159250        484963
+Forecast Date 2008, Mar 1
+                Actual       Forecast       Error
+Human           674287       1160000        485713
+Bagging.LeastMedSq         674287       1112088        437801
+
+
+Forecast Date Feb 1
+Total Error Human   3884092.0
+Total Error Bagging.LeastMedSq 4681352.25
+Mean Error Human    431565
+Mean Error Bagging.LeastMedSq  520150
+
+
+
+
+Forecast Date Mar 1
+Total Error Human   4836226.0
+Total Error Bagging.LeastMedSq 4771321.084
+Mean Error Human    537358
+Mean Error Bagging.LeastMedSq  530146
+
+
+
+
+Forecast Date Apr 1
+Total Error Human   2750513.0
+Total Error Bagging.LeastMedSq 3926010.896
+Mean Error Human    343814
+Mean Error Bagging.LeastMedSq  490751
+
+
+
+
+Forecast Date May 1
+Total Error Bagging.LeastMedSq 1974786.712
+Mean Error Bagging.LeastMedSq  246848
+
+
