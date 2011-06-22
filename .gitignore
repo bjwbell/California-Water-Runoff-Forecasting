@@ -7,3 +7,4 @@ linear_model.out
 *.out
 tmp/*.arff
 __pycache__
+*.pyc
