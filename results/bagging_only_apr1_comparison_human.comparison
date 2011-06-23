@@ -1,0 +1,49 @@
+Forecast Date 2000, Apr 1
+                Actual       Forecast       Error
+Human           552626        580000         27374
+Bagging.LeastMedSq         552626        765514        212888
+Forecast Date 2001, Apr 1
+                Actual       Forecast       Error
+Human           973817       1100000        126183
+Bagging.LeastMedSq         973817       1001334         27517
+Forecast Date 2002, Apr 1
+                Actual       Forecast       Error
+Human          1354434        680000        674434
+Bagging.LeastMedSq        1354434       1207755        146678
+Forecast Date 2003, Apr 1
+                Actual       Forecast       Error
+Human           632159        940000        307841
+Bagging.LeastMedSq         632159        377431        254727
+Forecast Date 2004, Apr 1
+                Actual       Forecast       Error
+Human          2003878       1510000        493878
+Bagging.LeastMedSq        2003878       1459098        544779
+Forecast Date 2005, Apr 1
+                Actual       Forecast       Error
+Human          2622387       1630000        992387
+Bagging.LeastMedSq        2622387       3366765        744378
+Forecast Date 2006, Apr 1
+                Actual       Forecast       Error
+Human           522651        590000         67349
+Bagging.LeastMedSq         522651        593748         71097
+Forecast Date 2007, Apr 1
+                Actual       Forecast       Error
+Human           674287        940000        265713
+Bagging.LeastMedSq         674287        432486        241800
+Forecast Date 2008, Apr 1
+                Actual       Forecast       Error
+Human          1068327       1000000         68327
+Bagging.LeastMedSq        1068327       1109138         40811
+Forecast Date 2009, Apr 1
+                Actual       Forecast       Error
+Human          1486780       1050000        436780
+Bagging.LeastMedSq        1486780       1555804         69024
+
+
+Forecast Date Apr 1
+Total Error Human   3460266.0
+Total Error Bagging.LeastMedSq 2353702.771
+Mean Error Human    346026
+Mean Error Bagging.LeastMedSq  235370
+
+

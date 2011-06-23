@@ -1,0 +1,1 @@
+java -cp weka.jar weka.classifiers.meta.Bagging -l models\bagging_only_apr1_leastmedsq.model -p last -T test_data\AmericanRiv_TrainThruApr_Test.arff > results\bagging_only_apr1_leastmedsq.out

@@ -9,13 +9,13 @@ I've split the data into the following directories:
    Contains all the data files with none of the instances removed
 
 3. .\models 
-   Contains the generated models by WEKA. As of now it's setup to only generate linear regression models
+   Contains the generated models by WEKA. 
 
 4. .\spreadsheets
-   Contains the various spreadsheets that you had in the directory
+   Contains misc spreadsheets.
 
 5. .\test_data
-    Contains the data files with only the last 10 instances
+    Contains the data files with only the last 10 instances.
 
 6. .\results
     Contains the results of training the models on .\data and then testing on .\test_data
@@ -67,6 +67,22 @@ To test the models run
 ditto on .\test_models.sh
 
 To compare the results checkout the files in .\results and the forecasts in .\spreadsheets (the forecast files are named Forecasts-Feb.xlsx etc).
+
+==Bagging Least Med Sq Apr1 Forecast==
+To create the Apr1 forecast using the bagging least med sq trainging model use
+train_bagging_only_apr1_leastmedsq.bat
+The above batch script trains the data on data\AmericanRiv_TrainThruApr.arff
+
+To test the Apr1 forecast use test_bagging_only_apr1_leastmedsq.bat, it'll put the results in "results\bagging_only_apr1_leastmedsq.out".
+
+The below batch snippet compares the bagging least.med.sq forecast with the human ensemble:
+
+echo "import util_apr
+util_apr.compare_model_with_human('Bagging.LeastMedSq', 'bagging_only_apr1_leastmedsq.out')" | python
+
+==//Bagging Least Med Sq Apr1 Forecast==
+
+
 //TRAINING
 
 
